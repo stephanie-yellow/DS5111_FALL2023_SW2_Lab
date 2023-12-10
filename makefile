@@ -14,3 +14,7 @@ run:
 tests:
 	@echo "Running tests"
 	@. env/bin/activate && pytest -vv tests
+lint:
+
+	@echo "Linting"
+	@. env/bin/activate && pylint bin/perceptron.py
