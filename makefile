@@ -17,4 +17,4 @@ tests:
 lint:
 
 	@echo "Linting"
-	@. env/bin/activate && pylint bin/perceptron.py
+	@. env/bin/activate && pylint --disable=R1728 bin/perceptron.py
