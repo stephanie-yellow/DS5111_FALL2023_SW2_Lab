@@ -13,8 +13,8 @@ run:
 
 lint:
 	@echo "Running lint"
-	@. env/bin/activate && pylint --disable=R1728 --disable=C0103 bin/perceptron.py
+	@. env/bin/activate && pylint --disable=R1728 bin/perceptron.py
 
 tests:
 	@echo "Running tests"
-	@. env/bin/activate && pytest -vv tests
+	@source env/bin/activate && pytest -vv tests/test_perceptron.py
