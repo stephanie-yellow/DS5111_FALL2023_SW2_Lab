@@ -1,0 +1,5 @@
+1. To get make to work, I had to build the makefile itself, ensuring that tabs and new lines were properly respected.
+2. Mostly, I just had to confirm that python3 was installed on my instance. 
+3. If we were to separate the two bash commands, the tasks would run separately, thus installing the packages, even if building the virtual environment failed. We want the required packages to be installed inside the virtual environment, so it's important to do it on one line, separating the commands with a ;.. 
+4. If we had a file named 'make' in the main folder, I think running 'make run' would look at that file, instead of the designated 'run' function in the makefile. To avoid this, we could rename either the file called 'run' or the command in the makefile, calling it something like 'run-function'.
+5. sys.path is used instead of manually setting a directory/filepath. The intention being that sys.path will run in whatever directory and should reduce errors than if I were to manually type the directory's path.

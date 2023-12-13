@@ -5,11 +5,11 @@ env:
 	@echo "Setting up virtual environment called env"
 	@python3 -m venv env
 	@echo "Installing required packages"
-	@. env/bin/activate && pip install -r requirements.txt
+	@. env/bin/activate ; pip install -r requirements.txt
 
 run:
 	@echo "Running clockdeco_param.py"
-	@. env/bin/activate && python bin/clockdeco_param.py
+	@. env/bin/activate ; python bin/clockdeco_param.py
 
 lint:
 	@echo "Running lint"
